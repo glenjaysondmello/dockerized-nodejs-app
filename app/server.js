@@ -11,7 +11,7 @@ app.use(cors());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
-const mongoUrl = "mongodb://admin:password@mongodb:27017";
+const mongoUrl = "mongodb://admin:password@localhost:27017";
 // const mongoUrl = "mongodb://admin:password@localhost:27017";
 
 const databaseName = "user-account";
