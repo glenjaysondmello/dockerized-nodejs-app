@@ -17,7 +17,6 @@ const mongoUrl = "mongodb://admin:password@mongodb:27017";
 const databaseName = "user-account";
 let db;
 
-// Establish a database connection once during server startup
 MongoClient.connect(mongoUrl)
     .then(client => {
         console.log("Connected to Database");
@@ -83,6 +82,6 @@ app.get('/get-profile', async (req, res) => {
     }
 });
 
-app.listen(3000, () => {
-    console.log("Server listening on port 3000!");
+app.listen(4000, () => {
+    console.log("Server listening on port 4000!");
 });
